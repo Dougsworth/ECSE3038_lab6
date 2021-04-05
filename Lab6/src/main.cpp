@@ -4,6 +4,8 @@
 #define ab true
 #define tankID int(5)
 
+// float randNumber;
+
 SoftwareSerial esp(10, 11); // RX | TX
 
 int getWaterLevel();
@@ -41,6 +43,14 @@ int getWaterLevel()
   return random(10, 201);
 }
 
+//Note to self to try as well
+//void getWaterLevel() {
+  
+//   randNumber = random(10, 200);
+
+//   Serial.println(randNumber);
+//   Serial.println("----------------------------------------------------------------------------");
+// }
 String sendData(String command, const int timeout, boolean debug)
 {
   String response = "";
